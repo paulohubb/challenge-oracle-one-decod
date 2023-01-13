@@ -1,0 +1,364 @@
+header {
+    background: #E5E5E5;
+    display: inline-flex;
+    
+}
+html, body {
+    font-family: 'Inter', sans-serif;
+    background:  #E5E5E5;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+}
+
+.logo {
+    position: relative;
+    width: 0.2px;
+    margin: -20px 0 0 40px;
+}
+
+.caixa {
+    background: #FFFFFF;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 800px;
+    top: 50px;
+    border-radius: 32px;
+    margin: -50px 40px -50px 40px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.input-principal {
+    background: #E5E5E5;
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 100px;
+    top: 168px;
+    border: black;
+    font-size: 32px;
+    font-family: Inter;
+    color: black;
+    resize: none;
+    box-shadow: 5px 5px 15px;
+    border-radius: 10px;
+}
+
+.input-principal:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.paragrafo-botoes {
+    width: 252px;
+    height: 18px;
+    position: absolute;
+    margin: -50px 948px 16px 100px;
+    font-size: 12px;
+    color: #495057;
+}
+
+.paragrafo-botoes:before {
+    color: #495057;
+    margin: 0 8px 0 0;
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
+}
+
+#conteudo-caixa-1 {
+    display: block;
+}
+
+#conteudo-caixa-2 {
+    display: none;
+}
+
+.input-caixa {
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 24px 24px;
+    border: none;
+    font-size: 24px;
+    color: #495057;
+}
+
+.copiar {
+    height: 67px;
+    position: absolute;
+    width: 341px;
+    height: 67px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    bottom: 5%;
+    left: 8%;
+}
+
+.imagem-caixa {
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    left: 7%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+}
+
+.mensagens-box {
+    text-align: center;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.paragrafo1-direita {
+    color: #343A40;
+    position: relative;
+    width: 336px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 32px auto 16px auto;
+    padding: auto;
+}
+
+.botoes-principais {
+    display: flex;
+    height: 67px;
+    bottom: 0;
+    position: relative;
+    margin: 460px 80px 40px 100px;
+}
+
+.criptografar {
+    margin: 0 24px 0 0;
+    width: 300px;
+    height: 67px;
+    background: black;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-transform: uppercase;
+    transition: 1s;
+}
+
+.criptografar:hover {
+    background: #D8DFE8;
+    color: black;
+}
+
+.descriptografar {
+    width: 300px;
+    height: 67px;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    font-transform: uppercase;
+    transition: 1s;
+}
+
+.descriptografar:hover {
+    background: grey;
+    color: black;
+}
+
+
+
+footer {
+    position: relative;
+    width: 100%
+    max-width: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    margin: 10px auto;
+    font-size: 15px;
+    color: white;
+    margin: -40px -58px;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    body {
+        display: block;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 10px;
+    }
+
+    .botoes-principais {
+        padding: 16px;
+        position: relative;
+        top: -170px;
+        margin: auto;
+        display: block;
+        min-width: 270px;
+    }
+
+    .criptografar {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .descriptografar {
+        width: 100%;
+    }
+
+    .paragrafo-botoes {
+        position: relative;
+        top: -170px;
+        margin: auto;
+    }
+    
+    .input-principal {
+        position: relative;
+        top: -190px;
+        width: 80%;
+        left: 8%;
+        min-width: 270px;
+    }
+
+    .caixa {
+        position: relative;
+        width: 100%;
+        height: 12rem;
+        left: 0;
+        top: 550px;
+        margin: auto;
+        min-width: 270px;
+    }
+
+    .caixa p {
+        padding: 16px;
+    }
+
+    .mensagens-box {
+        top: 20%;
+    }
+
+    .paragrafo1-direita {
+        left: -14px;
+    }
+
+    .imagem-caixa {
+        display: none;
+    }
+
+    .copiar {
+        width: 85%;
+    }
+
+    footer {
+        top: 130px;
+        position: relative;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 481px) {
+
+    body {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    .input-principal {
+        position: relative;
+        top: -190px;
+        width: 80%;
+        left: 8%;
+    }
+    
+    .paragrafo-botoes {
+        position: relative;
+        top: 12px;
+    }
+
+    .botoes-principais {
+        position: relative;
+        padding: 16px;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .caixa {
+        position: relative;
+        width: auto;
+        height: 12rem;
+        left: 0;
+        top: 600px;
+        margin: auto;
+    }
+
+    .imagem-caixa {
+        display: none;
+    }
+
+    .mensagens-box {
+        top: 30%;
+        width: 80%;
+    }
+
+    .paragrafo1-direita {
+        width: 80%;
+    }
+
+    .paragrafo2-direita {
+        top: -20px;
+    }
+
+    .caixa p {
+        padding: 16px 16px;
+    }
+
+    .copiar {
+        width: 85%;
+        top: 55%;
+    }
+
+    footer {
+        position: relative;
+        top: 190px;
+    }
+
+}
+
+@media screen and (min-width: 901px) {
+    body {
+        max-height: 100%;
+        width: 960px;
+        max-width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1230px;
+    }
+
+    .caixa {
+        height: 90%;
+        min-height: 600px;
+        max-height: 700px;
+    }
+
+    footer {
+        top: 10%;
+        position: relative;
+    }
+    
+    
+}
